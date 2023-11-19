@@ -1,0 +1,28 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText; 2023 Ryosuke Suxuki ryo135791113@gmail.com
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+numbers = list(map(float, sys.argv[1:]))
+
+# 四則演算
+print("加算の結果: ", sum(numbers))
+print("減算の結果: ", numbers[0] - sum(numbers[1:]))
+
+def prod(lst):
+    result = 1
+    for number in lst:
+        result *= number
+    return result
+
+print("乗算の結果: ", prod(numbers))
+
+if 0 not in numbers:
+    result = numbers[0]
+    for number in numbers[1:]:
+        result /= number
+    print("除算の結果: ", result)
+else:
+    print("エラー: 0で割ることはできません")
+

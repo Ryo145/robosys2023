@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText; 2023 Ryosuke Suxuki ryo135791113@gmail.com
 # SPDX-License-Identifier: BSD-3-Clause
 
-import sys  
+import sys
 
 numbers = list(map(float, sys.argv[1:]))
 
@@ -25,4 +25,3 @@ if 0 not in numbers:
     print("除算の結果: ", result)
 else:
     print("エラー: 0で割ることはできません")
-

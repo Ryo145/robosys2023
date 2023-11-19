@@ -6,6 +6,10 @@ import sys
 
 numbers = list(map(float, sys.argv[1:]))
 
+if len(numbers) <= 1:
+    print("エラー: 2つ以上の数値を入力してください")
+    sys.exit(1)
+
 # 四則演算
 print("加算の結果: ", sum(numbers))
 print("減算の結果: ", numbers[0] - sum(numbers[1:]))

@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText; 2023 Ryosuke Suxuki ryo135791113@gmail.com
+# SPDX-License-Identifier: BSD-3-Clause
+
+# 数値の入力
+x = float(input("第一数値を入力してください: "))
+y = float(input("第二数値を入力してください: "))
+
+# 四則演算
+print("加算の結果: ", x + y)
+print("減算の結果: ", x - y)
+print("乗算の結果: ", x * y)
+if y != 0:
+    print("除算の結果: ", x / y)
+else:
+    print("エラー: 0で割ることはできません")

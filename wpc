@@ -2,15 +2,22 @@
 # SPDX-FileCopyrightText; 2023 Ryosuke Suxuki ryo135791113@gmail.com
 # SPDX-License-Identifier: BSD-3-Clause
 
+import math  # mathモジュールをインポート
+
 # 数値の入力
-x = float(input("第一数値を入力してください: "))
-y = float(input("第二数値を入力してください: "))
+numbers = list(map(float, input("数値をスペースで区切って入力してください: ").split()))
 
 # 四則演算
-print("加算の結果: ", x + y)
-print("減算の結果: ", x - y)
-print("乗算の結果: ", x * y)
-if y != 0:
-    print("除算の結果: ", x / y)
+print("加算の結果: ", sum(numbers))
+print("減算の結果: ", numbers[0] - sum(numbers[1:]))
+print("乗算の結果: ", math.prod(numbers))
+
+# 0が含まれていない場合のみ除算を行う
+if 0 not in numbers:
+    result = numbers[0]
+    for number in numbers[1:]:
+        result /= number
+    print("除算の結果: ", result)
 else:
     print("エラー: 0で割ることはできません")
+

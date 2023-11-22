@@ -11,14 +11,12 @@
 ## 実行例
 
 ```
-$ seq 6 | ./plus
+$ seq 6|./plus
 ```
 
 ## 実行結果
 
-```
-
-```
+21
 
 # vbnコマンド
 [![test1](https://github.com/Ryo145/robosys2023/actions/workflows/test1.yml/badge.svg)](https://github.com/Ryo145/robosys2023/actions/workflows/test1.yml)

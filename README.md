@@ -12,11 +12,9 @@
 
 ```
 $ seq 6|./plus
+21
 ```
 
-## 実行結果
-
-21
 
 # vbnコマンド
 [![test1](https://github.com/Ryo145/robosys2023/actions/workflows/test1.yml/badge.svg)](https://github.com/Ryo145/robosys2023/actions/workflows/test1.yml)
@@ -27,14 +25,11 @@ $ seq 6|./plus
 
 ```
 $ ./vbn 4 8
-```
-
-## 実行結果
-
 加算の結果:  12.0
 減算の結果:  -4.0
 乗算の結果:  32.0
 除算の結果:  0.5
+```
 
 # 必要なソフトウェア
 * Python

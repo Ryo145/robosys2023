@@ -7,16 +7,21 @@ Ubuntu python
 
 標準入力から読み込んだ数字を足す。
 
+##実行例
+
 # vbnコマンド
 [![test1](https://github.com/Ryo145/robosys2023/actions/workflows/test1.yml/badge.svg)](https://github.com/Ryo145/robosys2023/actions/workflows/test1.yml)
 
 標準入力から読み込んだ数字を四則演算する。
 
-## 必要なソフトウェア
+##実行例
+
+
+# 必要なソフトウェア
 * Python
   * テスト済み: 3.7~3.10 
  
-## テスト環境
+# テスト環境
 * Ubuntu
 
 # 著作権・ライセンス

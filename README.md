@@ -7,7 +7,7 @@ Ubuntu python
 標準入力から読み込んだ数字を足す。
 
 # vbnコマンド
-[![test1]()]()
+[![test1](https://github.com/Ryo145/robosys2023/actions/workflows/test1.yml/badge.svg)](https://github.com/Ryo145/robosys2023/actions/workflows/test1.yml)
 
 ## 必要なソフトウェア
 * Python

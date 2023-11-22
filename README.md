@@ -10,6 +10,8 @@
 
 ## 実行例
 
+$seq 6 | ./plus
+
 # vbnコマンド
 [![test1](https://github.com/Ryo145/robosys2023/actions/workflows/test1.yml/badge.svg)](https://github.com/Ryo145/robosys2023/actions/workflows/test1.yml)
 

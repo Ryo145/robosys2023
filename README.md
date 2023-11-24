@@ -1,7 +1,6 @@
 # robosys2023
-*このリポジトリは千葉工業大学先進工学部未来ロボティクス学科４sのロボットシステム学の講義で使用したものである。
-
-*このリポジトリには２つのコマンドがある。
+このリポジトリは千葉工業大学先進工学部未来ロボティクス学科４sのロボットシステム学の講義で使用したものである。  
+このリポジトリには２つのコマンドがある。
 
 # plusコマンド
 [![test](https://github.com/Ryo145/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/Ryo145/robosys2023/actions/workflows/test.yml)

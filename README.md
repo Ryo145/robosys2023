@@ -2,6 +2,13 @@
 このリポジトリは千葉工業大学先進工学部未来ロボティクス学科４sのロボットシステム学の講義で使用したものである。  
 このリポジトリには２つのコマンドがある。
 
+#インストール方法
+適当な場所にこのリポジトリをクローンして使用する。  
+以下でクローン出来る。
+```
+$ git clone https://github.com/Ryo145/robosys2023.git
+```
+
 # plusコマンド
 [![test](https://github.com/Ryo145/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/Ryo145/robosys2023/actions/workflows/test.yml)
 

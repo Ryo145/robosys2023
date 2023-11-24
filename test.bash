@@ -18,5 +18,8 @@ out=$(echo -e "0" | ./plus)
 out=$(echo -e "-1\n-2\n-3" | ./plus)
 [ "${out}" = -6 ] || ng ${LINENO}
 
+out=$(echo -e "1.5\n2.5\n3.5" | ./plus)
+[ "${out}" = 7.5 ] || ng ${LINENO}
+
 [ "$res" = 0 ] && echo OK
 exit $res

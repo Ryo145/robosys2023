@@ -12,5 +12,11 @@ res=0
 out=$(seq 5 | ./plus)
 [ "${out}" = 15 ] || ng ${LINENO}
 
+out=$(echo -e "0" | ./plus)
+[ "${out}" = 0 ] || ng ${LINENO}
+
+out=$(echo -e "-1\n-2\n-3" | ./plus)
+[ "${out}" = -6 ] || ng ${LINENO}
+
 [ "$res" = 0 ] && echo OK
 exit $res

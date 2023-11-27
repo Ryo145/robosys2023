@@ -10,7 +10,7 @@ ng() {
 res=0
 
 out=$(python3 vbn 0 0)
-expected=$'加算の結果:  0\n減算の結果:  0\n乗算の結果:  0\nエラー: 0で割ることはできません'
+expected=$'加算の結果:  0.0\n減算の結果:  0.0\n乗算の結果:  0.0\nエラー: 0で割ることはできません'
 if [ "${out}" != "${expected}" ]; then
     ng ${LINENO}
 fi

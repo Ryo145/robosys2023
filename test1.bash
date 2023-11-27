@@ -21,6 +21,12 @@ if [ "${out}" != "${expected}" ]; then
     ng ${LINENO}
 fi
 
+out=$(python3 vbn -1 -2)
+expected=$'加算の結果:  -3.0\n減算の結果:  1.0\n乗算の結果:  2.0\n除算の結果:  0.5'
+if [ "${out}" != "${expected}" ]; then
+    ng ${LINENO}
+fi
+
 if [ "$res" = 0 ]; then
     echo "OK"
 fi

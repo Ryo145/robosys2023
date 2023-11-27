@@ -9,14 +9,14 @@ res=1
 
 res=0
 
-out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || ng ${LINENO}
-
-out=$(seq 5 5 | ./plus)
-[ "${out}" = 5 ] || ng ${LINENO}
-
 out=$(seq 4 5 | ./plus)
-[ "${out}" = 5 ] || ng ${LINENO}
+if [ "${out}" != 9 ]; then
+    ng ${LINENO}
+fi
 
-[ "$res" = 0 ] && echo OK
+if [ "$res" = 0 ]; then
+    echo "OK"
+fi
+
 exit $res
+

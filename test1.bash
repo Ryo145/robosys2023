@@ -9,6 +9,12 @@ ng() {
 
 res=0
 
+out=$(python3 vbn 0 0)
+expected=$'加算の結果:  0\n減算の結果:  0\n乗算の結果:  0\nエラー: 0で割ることはできません'
+if [ "${out}" != "${expected}" ]; then
+    ng ${LINENO}
+fi
+
 out=$(python3 vbn 1 2)
 expected=$'加算の結果:  3.0\n減算の結果:  -1.0\n乗算の結果:  2.0\n除算の結果:  0.5'
 if [ "${out}" != "${expected}" ]; then

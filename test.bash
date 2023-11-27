@@ -9,6 +9,11 @@ res=1
 
 res=0
 
+out=$(seq 5 | ./plus)
+if [ "${out}" != 15 ]; then
+    ng ${LINENO}
+fi
+
 out=$(seq 4 5 | ./plus)
 if [ "${out}" != 9 ]; then
     ng ${LINENO}

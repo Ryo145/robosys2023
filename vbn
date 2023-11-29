@@ -11,7 +11,7 @@ if len(numbers) <= 1:
     sys.exit(1)
 
 # 四則演算
-print("加算の結果: ", sum(numbers))
+print( sum(numbers))
 print("減算の結果: ", numbers[0] - sum(numbers[1:]))
 
 def prod(lst):

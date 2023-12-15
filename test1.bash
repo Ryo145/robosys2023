@@ -51,6 +51,24 @@ if [ "${out}" != "${expected}" ]; then
     ng ${LINENO}
 fi
 
+out=$(python3 vbn 3 4 a d f)
+expected=$"エラー: 'a', 'd', 'f' は数値ではありません"
+if [ "${out}" != "${expected}" ]; then
+    ng ${LINENO}
+fi
+
+out=$(python3 vbn 1 あ 2 い)
+expected=$"エラー: 'あ', 'い' は数値ではありません"
+if [ "${out}" != "${expected}" ]; then
+    ng ${LINENO}
+fi
+
+out=$(python3 vbn 10 20 @)
+expected=$"エラー: '@' は数値ではありません"
+if [ "${out}" != "${expected}" ]; then
+    ng ${LINENO}
+fi
+
 if [ "$res" = 0 ]; then
     echo "OK"
 fi

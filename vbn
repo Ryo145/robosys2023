@@ -2,4 +2,47 @@
 # SPDX-FileCopyrightText; 2023 Ryosuke Suzuki ryo135791113@gmail.com
 # SPDX-License-Identifier: BSD-3-Clause
 
+import sys
+
+def is_float(n):
+    try:
+        float_n = float(n)
+    except ValueError:
+        return False
+    return True
+
+numbers = list(map(str, sys.argv[1:]))
+
+if len(numbers) <= 1:
+    print("エラー: 2つ以上の数値を入力してください")
+    sys.exit(1)
+
+non_floats = [number for number in numbers if not is_float(number)]
+
+if non_floats:
+    non_floats_str = ', '.join(["'{}'".format(number) for number in non_floats])
+    print("エラー: {} は数値ではありません".format(non_floats_str))
+    sys.exit(1)
+
+numbers = list(map(float, numbers))
+
+# 四則演算
+print(sum(numbers))
+print(numbers[0] - sum(numbers[1:]))
+
+def prod(lst):
+    result = 1
+    for number in lst:
+        result *= number
+    return result
+
+print(prod(numbers))
+
+if 0 not in numbers:
+    result = numbers[0]
+    for number in numbers[1:]:
+        result /= number
+    print(result)
+else:
+    print("エラー: 0で割ることはできません")
 
